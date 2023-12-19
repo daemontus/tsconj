@@ -1,0 +1,10 @@
+[project]
+name = "tsconj"
+version = "0.1.0"
+dependencies = [
+    "loguru>=0.2.5",
+    "python-sat",
+    "networkx>=2.2",
+    "minizinc>=0.6",
+    "pyeda>=0.28",
+]
