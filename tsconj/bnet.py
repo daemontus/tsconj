@@ -58,7 +58,7 @@ def read_bnet(fileobj: IO, method: str) -> nx.DiGraph:
     for line in fileobj.readlines():
         # Remove all whitespace and turn into lower-case letters.
         line_normalized = "".join(line.split()).lower()
-        if line_normalized.startswith("#") or line_normalized.startswith("targets, factors"):
+        if line_normalized.startswith("#") or line_normalized.startswith("targets,factors"):
             continue
         line = line.split("#")[0]
         try:
